@@ -6,7 +6,7 @@
  * 
  * Bari, Marzo 2014
  */
-package unita.it.masterds_nlp;
+package uniba.it.masterds_nlp;
 
 /**
  * Contiene le informazioni su una singola parola (Token)

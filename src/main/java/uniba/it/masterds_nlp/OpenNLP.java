@@ -6,7 +6,7 @@
  * 
  * Bari, Marzo 2014
  */
-package unita.it.masterds_nlp;
+package uniba.it.masterds_nlp;
 
 import java.io.File;
 import java.io.FileInputStream;
