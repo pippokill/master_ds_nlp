@@ -7,11 +7,14 @@ package uniba.it.masterds_nlp.ex;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import uniba.it.masterds_nlp.DictEntry;
 import uniba.it.masterds_nlp.OpenNLP;
 import uniba.it.masterds_nlp.Token;
 import uniba.it.masterds_nlp.Utils;
@@ -41,6 +44,14 @@ public class Ex1 {
                         dict.put(key, c + 1);
                     }
                 }
+            }
+            List<DictEntry> t=new ArrayList<>();
+            for (String key:dict.keySet()) {
+                t.add(new DictEntry(key, dict.get(key)));
+            }
+            Collections.sort(t,Collections.reverseOrder());
+            for(DictEntry e:t) {
+                System.out.println(e);
             }
         } catch (Exception ex) {
             Logger.getLogger(Ex1.class.getName()).log(Level.SEVERE, null, ex);

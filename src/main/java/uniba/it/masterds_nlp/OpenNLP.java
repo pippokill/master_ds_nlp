@@ -231,8 +231,8 @@ public class OpenNLP {
         nerTagger = new NERTagger();
         nerTagger.addNameFinder("LOC", new File(opennlpDir + "/en-ner-location.bin"));
         nerTagger.addNameFinder("PER", new File(opennlpDir + "/en-ner-person.bin"));
-        nerTagger.addNameFinder("GPE", new File(opennlpDir + "/en-ner-organization.bin"));
-        nerTagger.addNameFinder("ORG", new File(opennlpDir + "/en-ner-date.bin"));
+        nerTagger.addNameFinder("ORG", new File(opennlpDir + "/en-ner-organization.bin"));
+        nerTagger.addNameFinder("DATE", new File(opennlpDir + "/en-ner-date.bin"));
     }
 
     private void init() throws Exception {
